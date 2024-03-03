@@ -1,0 +1,102 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: #0ed5be;
+}
+.container {
+    background-image: url(images/bkg-image.jpg);
+    background-size: cover;
+   text-align: center;
+   border-radius: 10px;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   box-sizing: border-box;
+   border-style: solid;
+   margin: 100px auto 20px;
+   padding: 20px 20px;
+   max-width: 740px;
+}
+
+.heading1 {
+   text-align: center;
+}
+
+.heading1 h2{
+    font-size: 40px;
+}
+
+button {
+    background-color: orange;
+    color: black;
+    border-radius: 10%;
+}
+
+.add-task-box{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.input-box{
+    width: 70%;
+    border: 0.04rem solid #d2d2d2bf;
+    border-radius: 0.5rem;
+    padding: 8px;
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+    overflow-y: scroll;
+}
+
+li{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+li:last-child {
+    margin-bottom: 0;
+    border-bottom: none;
+  }
+  
+  .check {
+    margin-right: 10px;
+    font-size: 24px;
+    color: #cdc00f;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .completed .check {
+    color: #48a626;
+  }
+  
+  .delete {
+    color: red;
+    font-size: 18px;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .delete:hover {
+    color: #ff6b6b;
+  }
+  
+  #taskCount {
+    color: #888;
+    margin-top: 8px;
+    font-size: 14px;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .completed {
+    opacity: 0.6;
+  }
+  

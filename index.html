@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body> 
+    <div class="container">
+        <div class="heading1">
+            <h2>A Simple ToDo App  <img width="40px" height="40px" src="images/gtodo-todo-list-icon.png"> </h2>
+        </div>
+        <div>
+            <h5>Things to do Today</h5>
+        </div>
+        <div class="add-task-box">
+            <input type="text" placeholder="Add a Task" class="input-box" id="taskInput">
+            <button class="add" id="addBtn">Add</button>
+        </div>
+        <ul class="displayTodos" id="taskList">
+        </ul>
+        <hr/>
+        <div class="counter">
+            <p><span id="todoCount">0</span> tasks to do</p>
+            <button id="deleteBtn">Delete All</button>
+            <button id="completeAllButton">Mark All Completed</button>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
